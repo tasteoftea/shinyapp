@@ -1,0 +1,35 @@
+---
+title: "Documentation For ShinyApp"
+author: "JUNGSOK LEE"
+date: "2019 5 23"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This simple shiny app is built for predicting Sepal Length of iris data.
+
+
+## Input values
+
+- Sepal Width
+- Petal Length
+- Petal Width
+
+## Data structure of Iris data
+
+```{r cars, echo = TRUE}
+data(iris)
+head(iris)
+```
+
+## Min and Max values of each input
+It is suggested that input values are between Max and Min Value of original data.
+```{r}
+summary(iris)
+```
+
